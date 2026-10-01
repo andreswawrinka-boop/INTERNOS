@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades de Internos de Anestesiología</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#172033;min-height:100vh}
+header{background:linear-gradient(135deg,#0057ff,#00a8ff,#7b00ff);color:#fff;padding:42px 20px 36px;text-align:center;box-shadow:0 8px 25px rgba(0,87,255,.25)}
+.logo{width:78px;height:78px;margin:0 auto 15px;border-radius:22px;background:#fff;color:#0057ff;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+header h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-1px;margin-bottom:10px}
+header p{font-size:18px;font-weight:600;opacity:.96}
+.linea{width:100px;height:5px;background:#ffe600;border-radius:20px;margin:20px auto 0}
+
+main{width:min(1180px,94%);margin:40px auto}
+.titulo-seccion{text-align:center;margin-bottom:30px}
+.titulo-seccion h2{font-size:30px;color:#102a72;font-weight:900}
+.titulo-seccion p{margin-top:8px;color:#657089;font-size:16px}
+
+.actividades{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.actividad{position:relative;min-height:220px;border-radius:22px;padding:28px;color:#fff;text-decoration:none;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 24px rgba(20,35,70,.16);transition:transform .25s ease,box-shadow .25s ease;border:0;cursor:pointer;font-family:inherit;text-align:left}
+.actividad:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(20,35,70,.25)}
+.actividad:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.15);right:-45px;top:-45px}
+.icono{position:relative;z-index:2;width:58px;height:58px;border-radius:16px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:29px;margin-bottom:20px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.contenido{position:relative;z-index:2}
+.contenido h3{font-size:23px;font-weight:900;margin-bottom:9px}
+.contenido p{font-size:14px;line-height:1.5;opacity:.95}
+.boton{position:relative;z-index:2;margin-top:22px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.5px}
+
+.azul{background:linear-gradient(135deg,#0057ff,#00a8ff)}
+.rojo{background:linear-gradient(135deg,#ff1744,#ff5b22)}
+.verde{background:linear-gradient(135deg,#00a878,#00d96b)}
+.morado{background:linear-gradient(135deg,#7200ff,#b000ff)}
+.naranja{background:linear-gradient(135deg,#ff7200,#ffb300)}
+
+.subtitulo{display:none;text-align:center;margin:42px 0 24px}
+.subtitulo.visible{display:block}
+.subtitulo h2{font-size:29px;color:#102a72;font-weight:900}
+.subtitulo p{color:#657089;margin-top:7px}
+
+.talleres{display:none;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.talleres.visible{display:grid}
+
+.taller{position:relative;min-height:190px;border-radius:20px;padding:25px;color:#fff;text-decoration:none;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 9px 22px rgba(20,35,70,.15);transition:.25s}
+.taller:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(20,35,70,.23)}
+.taller:after{content:"";position:absolute;width:125px;height:125px;border-radius:50%;background:rgba(255,255,255,.14);right:-35px;top:-35px}
+.taller .icono{width:52px;height:52px;font-size:25px;margin-bottom:15px}
+.taller h3{font-size:20px;line-height:1.15;margin-bottom:8px}
+.taller p{font-size:13px;line-height:1.45}
+.taller .boton{margin-top:17px}
+
+footer{margin-top:55px;padding:25px 20px;background:#10182d;color:#fff;text-align:center}
+footer strong{color:#ffe600}
+footer p{font-size:13px;margin:5px 0}
+
+@media(max-width:600px){
+header{padding:30px 15px}
+.actividad{min-height:195px}
+.taller{min-height:180px}
+main{margin-top:30px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">A</div>
+<h1>Actividades de Internos</h1>
+<p>Programa Académico de Anestesiología</p>
+<div class="linea"></div>
+</header>
+
+<main>
+
+<section class="titulo-seccion">
+<h2>Actividades Académicas</h2>
+<p>Selecciona la actividad que deseas realizar</p>
+</section>
+
+<!-- OPCIONES PRINCIPALES -->
+<section class="actividades">
+
+<button class="actividad verde" onclick="mostrarTalleres()">
+<div>
+<div class="icono">🧠</div>
+<div class="contenido">
+<h3>Talleres</h3>
+<p>Accede a los talleres prácticos y actividades de aprendizaje.</p>
+</div>
+</div>
+<div class="boton">Ver talleres →</div>
+</button>
+
+<a href="cronogramas-internos.html" class="actividad naranja">
+<div>
+<div class="icono">📅</div>
+<div class="contenido">
+<h3>Cronograma</h3>
+<p>Consulta la programación de actividades, clases y talleres.</p>
+</div>
+</div>
+<div class="boton">Ver cronograma →</div>
+</a>
+
+</section>
+
+<!-- TALLERES QUE APARECEN AL HACER CLICK -->
+<section id="tituloTalleres" class="subtitulo">
+<h2>Talleres de Anestesiología</h2>
+<p>Selecciona el taller que deseas realizar</p>
+</section>
+
+<section id="talleres" class="talleres">
+
+<a href="via-aerea-ventilador.html" class="taller azul">
+<div>
+<div class="icono">🌬️</div>
+<div class="contenido">
+<h3>Vía Aérea y Ventilador</h3>
+<p>Manejo de la vía aérea y ventilación mecánica.</p>
+</div>
+</div>
+<div class="boton">Ingresar →</div>
+</a>
+
+<a href="dolor-anestesicos-locales.html" class="taller rojo">
+<div>
+<div class="icono">💉</div>
+<div class="contenido">
+<h3>Dolor y Anestésicos Locales</h3>
+<p>Manejo del dolor y aplicación de anestésicos locales.</p>
+</div>
+</div>
+<div class="boton">Ingresar →</div>
+</a>
+
+<a href="farmacologia-anestesica.html" class="taller morado">
+<div>
+<div class="icono">💊</div>
+<div class="contenido">
+<h3>Farmacología Anestésica</h3>
+<p>Farmacología aplicada a la práctica anestésica.</p>
+</div>
+</div>
+<div class="boton">Ingresar →</div>
+</a>
+
+<a href="liquidos-nvpo.html" class="taller verde">
+<div>
+<div class="icono">💧</div>
+<div class="contenido">
+<h3>Líquidos y NVPO</h3>
+<p>Fluidoterapia y prevención de náuseas y vómito postoperatorio.</p>
+</div>
+</div>
+<div class="boton">Ingresar →</div>
+</a>
+
+<a href="fisiologia-ecg.html" class="taller naranja">
+<div>
+<div class="icono">❤️</div>
+<div class="contenido">
+<h3>Fisiología y ECG</h3>
+<p>Fisiología aplicada e interpretación del electrocardiograma.</p>
+</div>
+</div>
+<div class="boton">Ingresar →</div>
+</a>
+
+</section>
+
+</main>
+
+<footer>
+<p><strong>Dr. Andrés Robayo Conde</strong></p>
+<p>Anestesiólogo · Coordinación Académica de Anestesiología</p>
+<p>© Todos los derechos reservados</p>
+</footer>
+
+<script>
+function mostrarTalleres(){
+    const talleres = document.getElementById("talleres");
+    const titulo = document.getElementById("tituloTalleres");
+
+    talleres.classList.toggle("visible");
+    titulo.classList.toggle("visible");
+
+    if(talleres.classList.contains("visible")){
+        setTimeout(() => {
+            titulo.scrollIntoView({behavior:"smooth", block:"start"});
+        }, 100);
+    }
+}
+</script>
+
+</body>
+</html>

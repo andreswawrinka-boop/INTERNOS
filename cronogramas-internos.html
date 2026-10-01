@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotación Anestesiología – Internos – Octubre 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;background:#fff;color:#0A1A33;padding-bottom:50px}
+header{background:linear-gradient(135deg,#0D47A1 0%,#1565C0 45%,#283593 100%);color:#fff;padding:32px 32px 24px}
+header h1{font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:900;letter-spacing:-.5px;margin-bottom:6px}
+header h2{font-size:1rem;font-weight:700;margin-bottom:16px}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{background:#0A2463;border:1.5px solid #fff;border-radius:20px;padding:5px 13px;font-size:.78rem;font-weight:800}
+.strip{background:#0A2463;color:#fff;padding:10px 32px;font-size:.86rem;font-weight:700;line-height:1.6}
+.strip b{text-transform:uppercase;font-size:.75rem;letter-spacing:.6px;margin-right:6px}
+.leyenda{display:flex;flex-wrap:wrap;gap:14px;padding:14px 32px;border-bottom:3px solid #0D47A1}
+.li{display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:800}
+.dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+main{padding:26px 24px;display:flex;flex-direction:column;gap:28px;max-width:1240px;margin:0 auto}
+.card{background:#fff;border-radius:18px;overflow:hidden;border:2px solid #0D47A1}
+.sh{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:13px 20px;color:#fff;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:900}
+.si{font-size:1.4rem}
+.res{margin-left:auto;font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:800}
+.nota{border:2px solid #283593;border-left:6px solid #283593;border-radius:0 12px 12px 0;padding:9px 14px;margin:14px 20px;font-size:.84rem;display:flex;gap:10px;align-items:flex-start;color:#1A237E}
+.nota .ico{font-size:1.2rem}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th{background:#0A2463;color:#fff;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.5px;padding:10px 13px;text-align:left;border-right:1.5px solid #1565C0}
+th:last-child{border-right:none}
+td{padding:10px 13px;vertical-align:middle;font-size:.87rem;border-bottom:1.5px solid #1565C0;border-right:1.5px solid #1565C0}
+td:last-child{border-right:none}
+tr:last-child td{border-bottom:none}
+.c-fecha{white-space:nowrap;font-weight:800;width:100px}
+.c-dia{font-weight:900;width:95px}
+.c-lugar{width:150px}
+.c-hora{font-size:.78rem;white-space:nowrap;width:160px;font-weight:700}
+.chip{display:inline-flex;align-items:center;gap:5px;border-radius:12px;padding:3px 11px;font-size:.77rem;font-weight:800;color:#fff;margin:2px 2px 2px 0}
+.c-tal{background:#0D47A1}.c-exp{background:#6A1B9A}.c-urg{background:#E65100}.c-lib{background:#2E7D32}.c-fes{background:#AD1457}
+.c-exa{background:#B71C1C}.c-sal{background:#1B5E20}.c-rob{background:#283593}.c-vac{background:#00838F}.c-noc{background:#311B92}.c-pos{background:#4E342E}
+.blk.noc{border-left:4px solid #311B92;padding-left:8px;color:#311B92}.sub.pos{color:#4E342E}
+.pct{color:#fff;border-radius:8px;padding:2px 7px;font-size:.72rem;font-weight:900}
+.blk{margin:2px 0 6px}.blk:last-child{margin-bottom:0}
+.sub{display:block;font-size:.8rem;font-weight:800;margin-top:2px}
+.guia{color:#6A1B9A}.rojo{color:#B71C1C}
+.warn{color:#E65100;font-weight:900}
+.tag-ini{color:#0D47A1;font-weight:900;font-size:.8rem}
+.normas{padding:22px}
+.ntit{font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:900;color:#0D47A1;margin-bottom:16px}
+.ngrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.nc{border:2px solid;border-left-width:6px;border-radius:12px;padding:13px 15px;display:flex;gap:12px;align-items:flex-start;background:#fff}
+.nc .ni{font-size:1.5rem;flex-shrink:0}
+.nc h4{font-size:.86rem;font-weight:900;margin-bottom:4px}
+.nc p,.nc li{font-size:.8rem;line-height:1.5;color:#0A1A33}
+.nc ul{padding-left:17px}
+.full{grid-column:1/-1}
+.cal{background:linear-gradient(135deg,#0A2463,#1A237E);color:#fff;border-radius:14px;padding:16px 18px}
+.cal h4{font-size:1rem;font-weight:900;margin-bottom:12px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.cb{border:2px solid #fff;border-radius:12px;padding:12px 15px}
+.cb .n{font-size:1.7rem;font-weight:900;line-height:1}
+.cb .t{font-size:.84rem;font-weight:900;margin-top:4px}
+.cb .d{font-size:.76rem;margin-top:3px;font-weight:700}
+.bar{display:flex;height:24px;border-radius:12px;overflow:hidden;margin-top:14px;font-size:.74rem;font-weight:900;border:2px solid #fff}
+.bar div{display:flex;align-items:center;justify-content:center;color:#fff;white-space:nowrap;overflow:hidden}
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.eb{border:2px solid #B71C1C;border-left-width:6px;border-radius:10px;padding:10px 14px}
+.eb .et{font-weight:900;font-size:.88rem;color:#B71C1C;margin-bottom:6px}
+footer{text-align:center;padding:18px;font-size:.78rem;font-weight:700;color:#0A2463}
+.calres{padding:20px 22px}
+.calres .ntit{margin-bottom:12px}
+.meses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.mes-t{font-family:'Montserrat',sans-serif;font-weight:900;font-size:.95rem;color:#0D47A1;text-transform:uppercase;margin-bottom:6px;text-align:center}
+.mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.mh{text-align:center;font-size:.7rem;font-weight:900;color:#fff;background:#0A2463;border-radius:4px;padding:3px 0}
+.md{min-height:46px;border-radius:6px;padding:3px;font-size:.72rem;display:flex;flex-direction:column;align-items:flex-start;gap:2px;color:#fff;border:3px solid transparent}
+.md b{font-size:.8rem}
+.md.vacio{background:transparent}
+.md.fuera{background:#fff;color:#1565C0;border:1.5px dashed #1565C0;font-weight:700}
+.k-noc{background:#311B92}.k-pos{background:#4E342E}.k-rob{background:#283593}.k-sal{background:#1B5E20}.k-lib{background:#2E7D32}.k-urg{background:#E65100}.k-fes{background:#AD1457}.k-vac{background:#00838F}
+.md.k-exa{border-color:#B71C1C;box-shadow:inset 0 0 0 2px #fff}
+.md.k-ini,.md.k-fin{outline:3px solid #0A1A33;outline-offset:1px}
+.mt{font-size:.58rem;font-weight:900;border-radius:4px;padding:0 4px;line-height:1.5;font-style:normal;color:#fff;border:1px solid #fff}
+.t-noc{background:#311B92}.t-t{background:#0D47A1}.t-exp{background:#6A1B9A}.t-ex{background:#B71C1C}.t-urg,.t-fes,.t-vac{background:#0A1A33}
+.leg-cal{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;font-size:.78rem;font-weight:800}
+.leg-cal span{display:inline-flex;align-items:center;gap:5px}
+.leg-cal i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.leg-cal .mt{font-size:.62rem}
+@media print{.calres{break-inside:avoid}}
+@media(max-width:640px){header h1{font-size:1.4rem}td{font-size:.8rem;padding:8px}main{padding:14px 8px}.leyenda,.strip{padding:12px 14px}.eg{grid-template-columns:1fr}}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.card{break-inside:auto}tr{break-inside:avoid}main{padding:10px}}
+</style></head><body>
+
+<header>
+  <h1>🩺 Rotación de Anestesiología</h1>
+  <h2>Internado de Medicina · 1 de octubre – 28 de octubre de 2026 · Dr. Andrés Robayo</h2>
+  <div class="badges">
+    <span class="badge">🏥 Hospital de Kennedy</span>
+    <span class="badge">📅 Lunes–Viernes 7:00 AM – 5:00 PM</span>
+    
+    <span class="badge">🌙 Turno nocturno entre semana: 7 AM–1 PM actividades · 1–7 PM preturno · 7 PM–7 AM turno · Fin de semana/festivo: solo 7 PM–7 AM · posturno libre</span>
+    <span class="badge">🍽️ Almuerzo 12:00 – 2:00 PM (concertar con anestesiólogo)</span>
+    <span class="badge">📤 Talleres → la plataforma antes del domingo 23:59</span>
+  </div>
+</header>
+<div class="strip"><div><b>Universidad</b>Universidad Militar</div><div><b>Internos</b>Sebastián Campos</div></div>
+
+<div class="leyenda"><span class="li"><span class="dot" style="background:#0D47A1"></span>Taller académico</span><span class="li"><span class="dot" style="background:#6A1B9A"></span>Exposición</span><span class="li"><span class="dot" style="background:#E65100"></span>Urgencias</span><span class="li"><span class="dot" style="background:#2E7D32"></span>Libre</span><span class="li"><span class="dot" style="background:#AD1457"></span>Festivo</span><span class="li"><span class="dot" style="background:#00838F"></span>Vacaciones</span><span class="li"><span class="dot" style="background:#B71C1C"></span>Examen</span><span class="li"><span class="dot" style="background:#311B92"></span>Turno nocturno</span><span class="li"><span class="dot" style="background:#4E342E"></span>Posturno</span><span class="li"><span class="dot" style="background:#283593"></span>Sala Dr. Robayo (obligatorio)</span><span class="li"><span class="dot" style="background:#1B5E20"></span>Sala libre</span></div>
+
+<main>
+<div class="card">
+      <div class="sh" style="background:#1565C0"><span class="si">📆</span>SEMANA 1 · 1 de octubre – 4 de octubre<span class="res">1 taller · 1 turno nocturno</span></div>
+      <div class="nota"><span class="ico">🔵</span><span><strong>Sala Dr. Robayo obligatoria:</strong> jueves 1. Los demás días hábiles puede ubicarse en la sala que desee.</span></div>
+      <div class="tw"><table><thead><tr><th>Fecha</th><th>Día</th><th>Lugar / Turno</th><th>Actividades del día</th><th>Horario</th></tr></thead><tbody><tr><td class="c-fecha">Jue 1 oct</td><td class="c-dia" style="color:#E65100">Jueves</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td><div class="blk"><span class="chip c-tal">📋 Taller 1</span> <span class="pct" style="background:#0D47A1">6%</span><span class="sub">Vía Aérea y Ventilador</span></div><br><span class="tag-ini">▶ Inicio de la rotación</span></td><td class="c-hora">7:00 AM – 5:00 PM<br><small>📤 Subir taller antes del dom 04/10 23:59</small></td></tr><tr><td class="c-fecha">Vie 2 oct</td><td class="c-dia" style="color:#C62828">Viernes</td><td class="c-lugar"><span class="chip c-sal">🏥 Sala libre</span><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🕖 7:00 AM – 1:00 PM · Actividades del día</span><span class="sub">🕐 1:00 PM – 7:00 PM · Preturno</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno</span><span class="sub pos">😴 Sáb 3 oct · Posturno: libre desde las 7:00 AM</span></div></td><td class="c-hora">7:00 AM → 7:00 AM (+1)</td></tr><tr><td class="c-fecha">Sáb 3 oct</td><td class="c-dia" style="color:#00838F">Sábado</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Vie 2 oct)</td><td class="c-hora">Libre desde 7:00 AM</td></tr><tr><td class="c-fecha">Dom 4 oct</td><td class="c-dia" style="color:#558B2F">Domingo</td><td class="c-lugar"><span class="chip c-lib">🟢 Libre</span></td><td>Día libre<br><small class="warn">⚠️ Fecha límite talleres semana 1: <u>hoy 23:59</u></small></td><td class="c-hora">—</td></tr></tbody></table></div>
+    </div><div class="card">
+      <div class="sh" style="background:#2E7D32"><span class="si">📆</span>SEMANA 2 · 5 de octubre – 11 de octubre<span class="res">1 taller · 1 exposición · 2 turnos nocturnos</span></div>
+      <div class="nota"><span class="ico">🔵</span><span><strong>Sala Dr. Robayo obligatoria:</strong> martes 6, miércoles 7 y jueves 8. Los demás días hábiles puede ubicarse en la sala que desee.</span></div>
+      <div class="tw"><table><thead><tr><th>Fecha</th><th>Día</th><th>Lugar / Turno</th><th>Actividades del día</th><th>Horario</th></tr></thead><tbody><tr><td class="c-fecha">Lun 5 oct</td><td class="c-dia" style="color:#1565C0">Lunes</td><td class="c-lugar"><span class="chip c-sal">🏥 Sala libre</span></td><td><div class="blk"><span class="chip c-tal">📋 Taller 2</span> <span class="pct" style="background:#0D47A1">6%</span><span class="sub">Farmacología Anestésica</span><span class="sub guia">📚 Revisar: Guía de Farmacología Básica</span></div></td><td class="c-hora">7:00 AM – 5:00 PM<br><small>📤 Subir taller antes del dom 11/10 23:59</small></td></tr><tr><td class="c-fecha">Mar 6 oct</td><td class="c-dia" style="color:#6A1B9A">Martes</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🕖 7:00 AM – 1:00 PM · Actividades del día</span><span class="sub">🕐 1:00 PM – 7:00 PM · Preturno</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno</span><span class="sub pos">😴 Mié 7 oct · Posturno: libre desde las 7:00 AM</span></div></td><td class="c-hora">7:00 AM → 7:00 AM (+1)</td></tr><tr><td class="c-fecha">Mié 7 oct</td><td class="c-dia" style="color:#2E7D32">Miércoles</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Mar 6 oct)</td><td class="c-hora">Libre desde 7:00 AM</td></tr><tr><td class="c-fecha">Jue 8 oct</td><td class="c-dia" style="color:#E65100">Jueves</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td>Actividad en sala de cirugía</td><td class="c-hora">7:00 AM – 5:00 PM</td></tr><tr><td class="c-fecha">Vie 9 oct</td><td class="c-dia" style="color:#C62828">Viernes</td><td class="c-lugar"><span class="chip c-sal">🏥 Sala libre</span></td><td><div class="blk"><span class="chip c-exp">🎤 Exposición</span> <span class="pct" style="background:#6A1B9A">5%</span><span class="sub">Ritmos de Paro</span></div></td><td class="c-hora">7:00 AM – 5:00 PM</td></tr><tr><td class="c-fecha">Sáb 10 oct</td><td class="c-dia" style="color:#00838F">Sábado</td><td class="c-lugar"><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno (fin de semana / festivo: sin preturno)</span><span class="sub pos">😴 Dom 11 oct · Posturno: libre desde las 7:00 AM</span></div></td><td class="c-hora">7:00 PM → 7:00 AM (+1)</td></tr><tr><td class="c-fecha">Dom 11 oct</td><td class="c-dia" style="color:#558B2F">Domingo</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Sáb 10 oct)<br><small class="warn">⚠️ Fecha límite talleres semana 2: <u>hoy 23:59</u></small></td><td class="c-hora">Libre desde 7:00 AM</td></tr></tbody></table></div>
+    </div><div class="card">
+      <div class="sh" style="background:#6A1B9A"><span class="si">📆</span>SEMANA 3 · 12 de octubre – 18 de octubre<span class="res">1 taller · Examen 1 · 2 turnos nocturnos · Festivo</span></div>
+      <div class="nota"><span class="ico">🔵</span><span><strong>Sala Dr. Robayo obligatoria:</strong> martes 13, miércoles 14 y jueves 15. Los demás días hábiles puede ubicarse en la sala que desee.</span></div>
+      <div class="tw"><table><thead><tr><th>Fecha</th><th>Día</th><th>Lugar / Turno</th><th>Actividades del día</th><th>Horario</th></tr></thead><tbody><tr><td class="c-fecha">Lun 12 oct</td><td class="c-dia" style="color:#1565C0">Lunes</td><td class="c-lugar"><span class="chip c-fes">🎉 Festivo</span></td><td>Festivo – Día de la Raza – Día libre</td><td class="c-hora">—</td></tr><tr><td class="c-fecha">Mar 13 oct</td><td class="c-dia" style="color:#6A1B9A">Martes</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td><div class="blk"><span class="chip c-tal">📋 Taller 3</span> <span class="pct" style="background:#0D47A1">6%</span><span class="sub">Dolor y Anestésicos Locales</span><span class="sub guia">📚 Revisar: Guía de Farmacología Básica</span></div></td><td class="c-hora">7:00 AM – 5:00 PM<br><small>📤 Subir taller antes del dom 18/10 23:59</small></td></tr><tr><td class="c-fecha">Mié 14 oct</td><td class="c-dia" style="color:#2E7D32">Miércoles</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🕖 7:00 AM – 1:00 PM · Actividades del día</span><span class="sub">🕐 1:00 PM – 7:00 PM · Preturno</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno</span><span class="sub pos">😴 Jue 15 oct · Posturno: libre desde las 7:00 AM</span></div></td><td class="c-hora">7:00 AM → 7:00 AM (+1)</td></tr><tr><td class="c-fecha">Jue 15 oct</td><td class="c-dia" style="color:#E65100">Jueves</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Mié 14 oct)<br><div class="blk"><span class="chip c-exa">🧪 EXAMEN 1</span> <span class="pct" style="background:#B71C1C">30%</span><span class="sub">Sede: Kennedy</span><span class="sub rojo">📝 Temas: Vía Aérea y Ventilador · Farmacología Anestésica · Ritmos de Paro</span></div></td><td class="c-hora">Libre desde 7:00 AM</td></tr><tr><td class="c-fecha">Vie 16 oct</td><td class="c-dia" style="color:#C62828">Viernes</td><td class="c-lugar"><span class="chip c-sal">🏥 Sala libre</span></td><td>Actividad en sala de cirugía</td><td class="c-hora">7:00 AM – 5:00 PM</td></tr><tr><td class="c-fecha">Sáb 17 oct</td><td class="c-dia" style="color:#00838F">Sábado</td><td class="c-lugar"><span class="chip c-lib">🟢 Libre</span></td><td>Día libre</td><td class="c-hora">—</td></tr><tr><td class="c-fecha">Dom 18 oct</td><td class="c-dia" style="color:#558B2F">Domingo</td><td class="c-lugar"><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno (fin de semana / festivo: sin preturno)</span><span class="sub pos">😴 Lun 19 oct · Posturno: libre desde las 7:00 AM</span></div><br><small class="warn">⚠️ Fecha límite talleres semana 3: <u>hoy 23:59</u></small></td><td class="c-hora">7:00 PM → 7:00 AM (+1)</td></tr></tbody></table></div>
+    </div><div class="card">
+      <div class="sh" style="background:#E65100"><span class="si">📆</span>SEMANA 4 · 19 de octubre – 25 de octubre<span class="res">1 taller · 1 exposición · 1 turno nocturno</span></div>
+      <div class="nota"><span class="ico">🔵</span><span><strong>Sala Dr. Robayo obligatoria:</strong> martes 20, miércoles 21 y jueves 22. Los demás días hábiles puede ubicarse en la sala que desee.</span></div>
+      <div class="tw"><table><thead><tr><th>Fecha</th><th>Día</th><th>Lugar / Turno</th><th>Actividades del día</th><th>Horario</th></tr></thead><tbody><tr><td class="c-fecha">Lun 19 oct</td><td class="c-dia" style="color:#1565C0">Lunes</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Dom 18 oct)<br><div class="blk"><span class="chip c-tal">📋 Taller 4</span> <span class="pct" style="background:#0D47A1">6%</span><span class="sub">Líquidos y Náuseas y Vómito Postoperatorio (NVPO)</span><span class="sub guia">📚 Revisar: Guía de Farmacología Básica</span></div></td><td class="c-hora">Libre desde 7:00 AM<br><small>📤 Subir taller antes del dom 25/10 23:59</small></td></tr><tr><td class="c-fecha">Mar 20 oct</td><td class="c-dia" style="color:#6A1B9A">Martes</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td>Actividad en sala de cirugía</td><td class="c-hora">7:00 AM – 5:00 PM</td></tr><tr><td class="c-fecha">Mié 21 oct</td><td class="c-dia" style="color:#2E7D32">Miércoles</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td>Actividad en sala de cirugía</td><td class="c-hora">7:00 AM – 5:00 PM</td></tr><tr><td class="c-fecha">Jue 22 oct</td><td class="c-dia" style="color:#E65100">Jueves</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🕖 7:00 AM – 1:00 PM · Actividades del día</span><span class="sub">🕐 1:00 PM – 7:00 PM · Preturno</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno</span><span class="sub pos">😴 Vie 23 oct · Posturno: libre desde las 7:00 AM</span></div></td><td class="c-hora">7:00 AM → 7:00 AM (+1)</td></tr><tr><td class="c-fecha">Vie 23 oct</td><td class="c-dia" style="color:#C62828">Viernes</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Jue 22 oct)<br><div class="blk"><span class="chip c-exp">🎤 Exposición</span> <span class="pct" style="background:#6A1B9A">5%</span><span class="sub">Halogenados</span></div></td><td class="c-hora">Libre desde 7:00 AM</td></tr><tr><td class="c-fecha">Sáb 24 oct</td><td class="c-dia" style="color:#00838F">Sábado</td><td class="c-lugar"><span class="chip c-lib">🟢 Libre</span></td><td>Día libre</td><td class="c-hora">—</td></tr><tr><td class="c-fecha">Dom 25 oct</td><td class="c-dia" style="color:#558B2F">Domingo</td><td class="c-lugar"><span class="chip c-lib">🟢 Libre</span></td><td>Día libre<br><small class="warn">⚠️ Fecha límite talleres semana 4: <u>hoy 23:59</u></small></td><td class="c-hora">—</td></tr></tbody></table></div>
+    </div><div class="card">
+      <div class="sh" style="background:#C62828"><span class="si">📆</span>SEMANA 5 · 26 de octubre – 28 de octubre<span class="res">1 taller · Examen 2 · 1 turno nocturno</span></div>
+      <div class="nota"><span class="ico">🔵</span><span><strong>Sala Dr. Robayo obligatoria:</strong> martes 27 y miércoles 28. Los demás días hábiles puede ubicarse en la sala que desee.</span></div>
+      <div class="tw"><table><thead><tr><th>Fecha</th><th>Día</th><th>Lugar / Turno</th><th>Actividades del día</th><th>Horario</th></tr></thead><tbody><tr><td class="c-fecha">Lun 26 oct</td><td class="c-dia" style="color:#1565C0">Lunes</td><td class="c-lugar"><span class="chip c-sal">🏥 Sala libre</span><span class="chip c-noc">🌙 Turno nocturno</span></td><td><div class="blk noc"><span class="chip c-noc">🌙 TURNO NOCTURNO</span><span class="sub">🕖 7:00 AM – 1:00 PM · Actividades del día</span><span class="sub">🕐 1:00 PM – 7:00 PM · Preturno</span><span class="sub">🌙 7:00 PM – 7:00 AM · Turno nocturno</span><span class="sub pos">😴 Mar 27 oct · Posturno: libre desde las 7:00 AM</span></div><div class="blk"><span class="chip c-tal">📋 Taller 5</span> <span class="pct" style="background:#0D47A1">6%</span><span class="sub">Fisiología Cardiovascular y Electrocardiografía</span></div></td><td class="c-hora">7:00 AM → 7:00 AM (+1)<br><small>📤 Subir taller antes del dom 01/11 23:59</small></td></tr><tr><td class="c-fecha">Mar 27 oct</td><td class="c-dia" style="color:#6A1B9A">Martes</td><td class="c-lugar"><span class="chip c-pos">😴 Posturno</span></td><td>Posturno – día libre (turno nocturno del Lun 26 oct)</td><td class="c-hora">Libre desde 7:00 AM</td></tr><tr><td class="c-fecha">Mié 28 oct</td><td class="c-dia" style="color:#2E7D32">Miércoles</td><td class="c-lugar"><span class="chip c-rob">🔵 Sala Dr. Robayo</span></td><td><div class="blk"><span class="chip c-exa">🧪 EXAMEN 2</span> <span class="pct" style="background:#B71C1C">30%</span><span class="sub">Sede: Kennedy</span><span class="sub rojo">📝 Temas: Dolor y Anestésicos Locales · Líquidos y Náuseas y Vómito Postoperatorio (NVPO) · Fisiología Cardiovascular y Electrocardiografía · Halogenados</span></div><br><strong>Fin de la rotación 🎓</strong><br><small class="warn">⚠️ Fecha límite talleres semana 5: <u>dom 01/11 23:59</u></small></td><td class="c-hora">7:00 AM – 5:00 PM</td></tr></tbody></table></div>
+    </div>
+
+<div class="card">
+ <div class="normas">
+  <div class="ntit">📌 Normas y Recordatorios de la Rotación</div>
+  <div class="ngrid">
+    <div class="nc" style="border-color:#0D47A1"><span class="ni">🕖</span><div><h4 style="color:#0D47A1">Horario</h4><p>Entre semana: 7:00 AM – 5:00 PM.<br>Turno nocturno entre semana: 7:00 AM → 7:00 AM del día siguiente.<br>Turno nocturno fin de semana/festivo: 7:00 PM → 7:00 AM.</p></div></div>
+    <div class="nc" style="border-color:#2E7D32"><span class="ni">🍽️</span><div><h4 style="color:#2E7D32">Almuerzo</h4><p>Ventana 12:00 – 2:00 PM, 1 hora. Se debe concertar con el anestesiólogo de la sala.</p></div></div>
+    
+    <div class="nc" style="border-color:#0D47A1"><span class="ni">📤</span><div><h4 style="color:#0D47A1">Entrega de Talleres</h4><p>Subir a la plataforma <strong>máximo el domingo de cada semana a las 23:59</strong>.</p></div></div>
+    <div class="nc" style="border-color:#283593"><span class="ni">🔵</span><div><h4 style="color:#283593">Sala Dr. Robayo</h4><p>Obligatorio: <strong>martes, miércoles y jueves</strong> durante toda la rotación (días hábiles). Los demás días, sala libre a elección.</p></div></div>
+    <div class="nc" style="border-color:#00838F"><span class="ni">🧼</span><div><h4 style="color:#00838F">Ingreso a Salas de Cirugía</h4><p>Realizar <strong>lavado de manos</strong>, usar <strong>uniforme de salas</strong> y portar <strong>equipo de protección personal (EPP)</strong> completo.</p></div></div>
+    <div class="nc full" style="border-color:#311B92"><span class="ni">🌙</span><div style="width:100%"><h4 style="color:#311B92">Turnos nocturnos</h4><p><strong>7:00 AM – 1:00 PM</strong> actividades del día · <strong>1:00 – 7:00 PM</strong> preturno · <strong>7:00 PM – 7:00 AM</strong> turno nocturno. En <strong>fin de semana o festivo</strong> el turno es SOLO de <strong>7:00 PM a 7:00 AM</strong> (sin preturno). A las <strong>7:00 AM</strong> del día siguiente inicia el <strong>posturno (día libre)</strong>.</p><ul><li><strong>Turno:</strong> viernes 2 de octubre (7 AM – 7 AM) → <strong>Posturno:</strong> sábado 3 de octubre</li><li><strong>Turno:</strong> martes 6 de octubre (7 AM – 7 AM) → <strong>Posturno:</strong> miércoles 7 de octubre</li><li><strong>Turno:</strong> sábado 10 de octubre (7 PM – 7 AM) → <strong>Posturno:</strong> domingo 11 de octubre</li><li><strong>Turno:</strong> miércoles 14 de octubre (7 AM – 7 AM) → <strong>Posturno:</strong> jueves 15 de octubre</li><li><strong>Turno:</strong> domingo 18 de octubre (7 PM – 7 AM) → <strong>Posturno:</strong> lunes 19 de octubre</li><li><strong>Turno:</strong> jueves 22 de octubre (7 AM – 7 AM) → <strong>Posturno:</strong> viernes 23 de octubre</li><li><strong>Turno:</strong> lunes 26 de octubre (7 AM – 7 AM) → <strong>Posturno:</strong> martes 27 de octubre</li></ul></div></div>
+    
+    <div class="nc" style="border-color:#AD1457"><span class="ni">🎉</span><div><h4 style="color:#AD1457">Festivos en la rotación</h4><p>Lun 12 oct (Día de la Raza)</p></div></div>
+
+    <div class="cal full">
+      <h4>🏆 Distribución de Calificaciones — Total: 100%</h4>
+      <div class="cg">
+        <div class="cb"><div class="n">60%</div><div class="t">🧪 Exámenes</div><div class="d">2 exámenes × <strong>30% c/u</strong></div></div>
+        <div class="cb"><div class="n">30%</div><div class="t">📋 Talleres</div><div class="d">5 talleres × <strong>6% c/u</strong></div></div>
+        <div class="cb"><div class="n">10%</div><div class="t">🎤 Exposiciones</div><div class="d">2 exposición(es) × <strong>5% c/u</strong></div></div>
+      </div>
+      <div class="bar"><div style="width:60%;background:#C62828">Exámenes 60%</div><div style="width:30%;background:#0D47A1">Talleres 30%</div><div style="width:10%;background:#6A1B9A">Exp. 10%</div></div>
+    </div>
+
+    <div class="nc full" style="border-color:#0D47A1"><span class="ni">📋</span><div style="width:100%"><h4 style="color:#0D47A1">Talleres (6% c/u)</h4><ul><li><strong>Taller 1:</strong> Vía Aérea y Ventilador — semana 1 · entrega dom 04/10 23:59</li><li><strong>Taller 2:</strong> Farmacología Anestésica — semana 2 · entrega dom 11/10 23:59</li><li><strong>Taller 3:</strong> Dolor y Anestésicos Locales — semana 3 · entrega dom 18/10 23:59</li><li><strong>Taller 4:</strong> Líquidos y Náuseas y Vómito Postoperatorio (NVPO) — semana 4 · entrega dom 25/10 23:59</li><li><strong>Taller 5:</strong> Fisiología Cardiovascular y Electrocardiografía — semana 5 · entrega dom 01/11 23:59</li></ul></div></div>
+    <div class="nc full" style="border-color:#6A1B9A"><span class="ni">🎤</span><div style="width:100%"><h4 style="color:#6A1B9A">Exposiciones (5% c/u)</h4><ul><li><strong>Ritmos de Paro</strong> — viernes 9 de octubre</li><li><strong>Halogenados</strong> — viernes 23 de octubre</li></ul></div></div>
+
+    <div class="nc full" style="border-color:#B71C1C"><span class="ni">🧪</span><div style="width:100%">
+      <h4 style="color:#B71C1C">Exámenes — cada uno vale 30%</h4>
+      <div class="eg">
+        <div class="eb"><div class="et">🧪 EXAMEN 1 — jueves 15 de octubre (Sede Kennedy)</div><ul><li>Vía Aérea y Ventilador</li><li>Farmacología Anestésica</li><li>Ritmos de Paro</li></ul></div>
+        <div class="eb"><div class="et">🧪 EXAMEN 2 — miércoles 28 de octubre (Sede Kennedy)</div><ul><li>Dolor y Anestésicos Locales</li><li>Líquidos y Náuseas y Vómito Postoperatorio (NVPO)</li><li>Fisiología Cardiovascular y Electrocardiografía</li><li>Halogenados</li></ul></div>
+      </div>
+    </div></div>
+
+    <div class="nc full" style="border-color:#6A1B9A"><span class="ni">📚</span><div><h4 style="color:#6A1B9A">Recurso Académico – Farmacología</h4><p>Para los talleres de Farmacología Anestésica, Dolor y Anestésicos Locales, y Líquidos se recomienda revisar la <strong>Guía de Farmacología Básica</strong> como material de apoyo durante la rotación.</p></div></div>
+  </div>
+ </div>
+</div>
+<div class="card calres">
+  <div class="ntit">🗓️ Calendario resumen de la rotación</div>
+  <div class="meses"><div class="mes"><div class="mes-t">octubre 2026</div><div class="mgrid"><div class="mh">L</div><div class="mh">M</div><div class="mh">M</div><div class="mh">J</div><div class="mh">V</div><div class="mh">S</div><div class="mh">D</div><div class="md vacio"></div><div class="md vacio"></div><div class="md vacio"></div><div class="md k-rob k-ini" title="Jueves 1 de octubre"><b>1</b><span class="mt t-t">T1</span></div><div class="md k-noc" title="Viernes 2 de octubre"><b>2</b><span class="mt t-noc">NOC</span></div><div class="md k-pos" title="Sábado 3 de octubre"><b>3</b><span class="mt t-pos">POS</span></div><div class="md k-lib" title="Domingo 4 de octubre"><b>4</b></div><div class="md k-sal" title="Lunes 5 de octubre"><b>5</b><span class="mt t-t">T2</span></div><div class="md k-noc" title="Martes 6 de octubre"><b>6</b><span class="mt t-noc">NOC</span></div><div class="md k-pos" title="Miércoles 7 de octubre"><b>7</b><span class="mt t-pos">POS</span></div><div class="md k-rob" title="Jueves 8 de octubre"><b>8</b></div><div class="md k-sal" title="Viernes 9 de octubre"><b>9</b><span class="mt t-exp">EXP</span></div><div class="md k-noc" title="Sábado 10 de octubre"><b>10</b><span class="mt t-noc">NOC</span></div><div class="md k-pos" title="Domingo 11 de octubre"><b>11</b><span class="mt t-pos">POS</span></div><div class="md k-fes" title="Lunes 12 de octubre · Día de la Raza"><b>12</b><span class="mt t-fes">FES</span></div><div class="md k-rob" title="Martes 13 de octubre"><b>13</b><span class="mt t-t">T3</span></div><div class="md k-noc" title="Miércoles 14 de octubre"><b>14</b><span class="mt t-noc">NOC</span></div><div class="md k-pos k-exa" title="Jueves 15 de octubre"><b>15</b><span class="mt t-pos">POS</span><span class="mt t-ex">EX1</span></div><div class="md k-sal" title="Viernes 16 de octubre"><b>16</b></div><div class="md k-lib" title="Sábado 17 de octubre"><b>17</b></div><div class="md k-noc" title="Domingo 18 de octubre"><b>18</b><span class="mt t-noc">NOC</span></div><div class="md k-pos" title="Lunes 19 de octubre"><b>19</b><span class="mt t-pos">POS</span><span class="mt t-t">T4</span></div><div class="md k-rob" title="Martes 20 de octubre"><b>20</b></div><div class="md k-rob" title="Miércoles 21 de octubre"><b>21</b></div><div class="md k-noc" title="Jueves 22 de octubre"><b>22</b><span class="mt t-noc">NOC</span></div><div class="md k-pos" title="Viernes 23 de octubre"><b>23</b><span class="mt t-pos">POS</span><span class="mt t-exp">EXP</span></div><div class="md k-lib" title="Sábado 24 de octubre"><b>24</b></div><div class="md k-lib" title="Domingo 25 de octubre"><b>25</b></div><div class="md k-noc" title="Lunes 26 de octubre"><b>26</b><span class="mt t-noc">NOC</span><span class="mt t-t">T5</span></div><div class="md k-pos" title="Martes 27 de octubre"><b>27</b><span class="mt t-pos">POS</span></div><div class="md k-rob k-exa k-fin" title="Miércoles 28 de octubre"><b>28</b><span class="mt t-ex">EX2</span></div><div class="md fuera">29</div><div class="md fuera">30</div><div class="md fuera">31</div></div></div></div>
+  <div class="leg-cal"><span><i style="background:#283593"></i>Sala Dr. Robayo</span><span><i style="background:#1B5E20"></i>Sala libre</span><span><i style="background:#2E7D32"></i>Libre</span><span><i style="background:#E65100"></i>Urgencias</span><span><i style="background:#AD1457"></i>Festivo</span><span><i style="background:#00838F"></i>Vacaciones</span><span><i style="background:#311B92"></i>Turno nocturno</span><span><i style="background:#4E342E"></i>Posturno</span><span><em class="mt t-t">T1</em>Taller</span><span><em class="mt t-exp">EXP</em>Exposición</span><span><em class="mt t-ex">EX1</em>Examen (borde rojo)</span><span>▢ Borde negro: inicio / fin</span></div>
+</div>
+</main>
+<footer>Rotación de Anestesiología · Internado de Medicina · Octubre 2026 · Hospital de Kennedy · Dr. Andrés Robayo</footer>
+</body></html>
